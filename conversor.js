@@ -5,8 +5,14 @@ function opcion(){
     let dec = document.getElementById('decimal');
     let hex = document.getElementById('hexadecimal');
 
+    bin.setAttribute("disabled" , true);
+    oct.setAttribute("disabled" , true);
+    dec.setAttribute("disabled" , true);
+    hex.setAttribute("disabled" , true);
+
     var btn_elegir = document.getElementById("btn_elegir");
     var selc = btn_elegir.options[btn_elegir.selectedIndex].value;
+
     switch(selc){
         case "bin":
             bin.removeAttribute("disabled");
