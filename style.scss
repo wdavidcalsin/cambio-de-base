@@ -1,5 +1,6 @@
 body {
     box-sizing: border-box;
+    background: #F3F8FB;
     
 }
 
@@ -67,5 +68,44 @@ label {
         border: none;
         border: rgb(7, 100, 207) 2px solid;
         outline: none;
+    }
+}
+
+.info-box{
+    
+    background: white;
+    display: flex;
+    width: 100%;
+    max-width: 400px;
+    border-left: 4px solid #00e49c;
+    box-shadow: 0 2px 14px 0 rgba(0,0,0,.1);
+    border-radius: 7px;
+    margin: auto;
+    .img{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        img{
+            display: block;
+            width: 70px;
+            border-radius: 50%;
+        }
+    }
+    .info{
+        
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: normal;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        // background: cyan;
+        flex: 1 1;
+        h2,span{
+            margin: 0;
+            font-weight: inherit;
+        }
+        
     }
 }
