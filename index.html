@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Conversor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Conversor Binário, Octal, Decimal e Hexadecimal</h1>
+    <div class="section">
+        <div class="elegir">
+            <h2>Escoger</h2>
+            <select id="btn_elegir" onchange="opcion()">
+                <option value="bin">Binario</option> 
+                <option value="oc" selected>Octal</option>
+                <option value="dec">Decimal</option>
+                <option value="hex">Hexadecimal</option>
+              </select>
+        </div>
+        <div id="container">
+            <div>
+                <label for="binario">Binário</label>
+                <input type="text" id="binario" class="box" oninput="converterBin()" disabled>
+            </div>
+    
+            <div>
+                <label for="octal">Octal</label>
+                <input type="text" id="octal" class="box" oninput="converterOct()" disabled>
+            </div>
+    
+            <div>
+                <label for="decimal">Decimal</label>
+                <input type="text" id="decimal" class="box" oninput="converterDec()" disabled>
+            </div>
+            
+            <div>
+                <label for="hexadecimal">Hexadecimal</label>
+                <input type="text" id="hexadecimal" class="box" oninput="converterHex()" disabled>
+            </div>
+    
+        </div>
+    </div>
+
+
+    <script src="conversor.js"></script>
+</body>
+</html>
