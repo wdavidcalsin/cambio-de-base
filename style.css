@@ -1,7 +1,13 @@
 body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  background: #F3F8FB; }
+  margin: 0;
+  background-image: url("https://affixtheme.com/html/xmee/demo/img/figure/bg9-l.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+  background-size: cover;
+  position: relative; }
 
 .section {
   display: -webkit-box;
@@ -13,12 +19,15 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 80px; }
+  padding: 30px 80px 90px 80px; }
 
 h1 {
   font-size: 42px;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif; }
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 50px 0;
+  color: white; }
 
 #container {
   display: -ms-grid;
@@ -32,14 +41,24 @@ h1 {
   display: block;
   width: 300px;
   height: 50px;
-  border: 1px solid gray;
+  border: 5px solid transparent;
   border-radius: 8px;
   font-size: xx-large;
   padding: 10px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  outline: none;
+  background: white; }
+  .box[disabled] {
+    background: #ddd;
+    cursor: not-allowed; }
+  .box:not([disabled]) {
+    border: 5px solid #00e49c;
+    border-radius: 5px; }
 
 #container div {
   margin-top: 20px; }
+  #container div label {
+    color: white; }
 
 label {
   font-size: xx-large;
@@ -52,15 +71,20 @@ label {
   float: right;
   display: block; }
   .elegir h2 {
+    color: white;
     font-size: 42px;
     font-family: Arial, Helvetica, sans-serif; }
   .elegir select {
+    background: transparent;
+    color: white;
     padding: 12px;
     font-size: 30px;
     border-radius: 5px;
     border: none;
-    border: #0764cf 2px solid;
+    border: white 2px solid;
     outline: none; }
+    .elegir select option {
+      background: #1064e2; }
 
 .info-box {
   background: white;

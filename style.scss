@@ -1,15 +1,20 @@
 body {
     box-sizing: border-box;
-    background: #F3F8FB;
+    margin: 0;
+    background-image: url("https://affixtheme.com/html/xmee/demo/img/figure/bg9-l.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
     
 }
 
 .section{
     display: flex;
-    // background: red;
     justify-content: center;
     align-items: center;
-    padding: 80px;
+    padding: 30px 80px 90px 80px;
     
 }
 
@@ -17,30 +22,47 @@ h1 {
     font-size: 42px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 50px 0;
+    color: white;
 }
 
 #container {
-//    margin: 30px 300px;
    display: grid;
    grid-template-columns: 1fr 1fr;
    column-gap: 50px;
-//    background-color: blue;
 }
 
 .box {
     display: block;
     width: 300px;
     height: 50px;
-    border: 1px solid gray;
+    border: 5px solid transparent;
     border-radius: 8px;
     font-size: xx-large;
     padding: 10px;
     text-transform: uppercase;
+    outline: none;
+    background: white;
+
+    &[disabled]{
+        background: #ddd;
+        cursor: not-allowed;
+    }
+    
+    &:not([disabled]){
+        // background: red;
+        border: 5px solid #00e49c;
+        border-radius: 5px;
+    }
     
 }
 
 #container div {
     margin-top: 20px;
+    label{
+        color: white;
+    }
 }
 
 label {
@@ -51,23 +73,27 @@ label {
 .elegir{
     text-align: center;
     margin: auto;
-    // background: orange;
     width: 100%;   
     float: right;
     display: block; 
    
     h2{
+        color: white;
         font-size: 42px;
-        // text-align: center;
         font-family: Arial, Helvetica, sans-serif;
     }
     select{
+        background: transparent;
+        color: white;
         padding: 12px;
         font-size: 30px;
         border-radius: 5px;
         border: none;
-        border: rgb(7, 100, 207) 2px solid;
+        border: white 2px solid;
         outline: none;
+        option{
+            background: rgb(16, 100, 226);
+        }
     }
 }
 
@@ -100,7 +126,6 @@ label {
         display: flex;
         flex-flow: column wrap;
         justify-content: center;
-        // background: cyan;
         flex: 1 1;
         h2,span{
             margin: 0;
@@ -109,3 +134,4 @@ label {
         
     }
 }
+

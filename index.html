@@ -6,57 +6,59 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Conversor Binário, Octal, Decimal e Hexadecimal</h1>
-    <div class="section">
-        <div class="elegir">
-            <h2>Escoger</h2>
+    <div class="contenedor">
+        <h1>Conversor Binário, Octal, Decimal e Hexadecimal</h1>
+        <div class="section">
+            <div class="elegir">
+                <h2>Escoger</h2>
 
-            <select id="btn_elegir" onchange="opcion()">
-                <option value="bin">Binario</option> 
-                <option value="oc" selected>Octal</option>
-                <option value="dec">Decimal</option>
-                <option value="hex">Hexadecimal</option>
-              </select>
+                <select id="btn_elegir" onchange="opcion()">
+                    <option value="bin">Binario</option> 
+                    <option value="oc" selected>Octal</option>
+                    <option value="dec">Decimal</option>
+                    <option value="hex">Hexadecimal</option>
+                </select>
 
-        </div>
-        <div id="container">
-            <div>
-                <label for="binario">Binário</label>
-                <input type="text" id="binario" class="box" oninput="converterBin()" disabled>
             </div>
-    
-            <div>
-                <label for="octal">Octal</label>
-                <input type="text" id="octal" class="box" oninput="converterOct()" disabled>
-            </div>
-    
-            <div>
-                <label for="decimal">Decimal</label>
-                <input type="text" id="decimal" class="box" oninput="converterDec()" disabled>
-            </div>
-            
-            <div>
-                <label for="hexadecimal">Hexadecimal</label>
-                <input type="text" id="hexadecimal" class="box" oninput="converterHex()" disabled>
-            </div>
-    
-        </div>
-    </div>
-
-    
+            <div id="container">
+                <div>
+                    <label for="binario">Binário</label>
+                    <input type="text" id="binario" class="box" oninput="converterBin()" disabled>
+                </div>
         
-            <div class="info-box">
-                <div class="img">
-                    <img src="https://pbs.twimg.com/profile_images/1161380274908880896/4PDB_vAz_400x400.jpg" alt="Willian David">
+                <div>
+                    <label for="octal">Octal</label>
+                    <input type="text" id="octal" class="box" oninput="converterOct()" disabled>
                 </div>
-                <div class="info">
-                    <h2>Willian David Calsin Borda</h2>
-                    <span>Estudiante de Ingeniería de Sistemas</span>
+        
+                <div>
+                    <label for="decimal">Decimal</label>
+                    <input type="text" id="decimal" class="box" oninput="converterDec()" disabled>
                 </div>
+                
+                <div>
+                    <label for="hexadecimal">Hexadecimal</label>
+                    <input type="text" id="hexadecimal" class="box" oninput="converterHex()" disabled>
+                </div>
+        
             </div>
+        </div>
 
-    
+        <div class="foo">
+            
+                <div class="info-box">
+                    <div class="img">
+                        <img src="https://pbs.twimg.com/profile_images/1161380274908880896/4PDB_vAz_400x400.jpg" alt="Willian David">
+                    </div>
+                    <div class="info">
+                        <h2>Willian David Calsin Borda</h2>
+                        <span>Estudiante de Ingeniería de Sistemas</span>
+                    </div>
+                </div>
 
+        </div>
+
+    </div>
     <script src="conversor.js"></script>
 </body>
 </html>
